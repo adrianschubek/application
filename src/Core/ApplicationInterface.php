@@ -4,10 +4,8 @@
  * https://adriansoftware.de
  */
 
-namespace Framework\Core;
+namespace adrianschubek\Core;
 
-
-use Framework\Http\ResponseInterface;
 use Psr\Container\ContainerInterface;
 
 interface ApplicationInterface
@@ -15,6 +13,4 @@ interface ApplicationInterface
     static function getContainer();
 
     static function setContainer(ContainerInterface $container);
-
-    function send($response);
 }

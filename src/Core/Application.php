@@ -1,12 +1,11 @@
 <?php
 /**
- * Copyright (c) 2019. Adrian Schubek.
- * https://framework.adriansoftware.de
+ * Copyright (c) 2019 Adrian Schubek
+ * https://adriansoftware.de
  */
 
 namespace adrianschubek\Core;
 
-use Framework\Core\ApplicationInterface;
 use Psr\Container\ContainerInterface;
 
 class Application implements ApplicationInterface
@@ -27,11 +26,4 @@ class Application implements ApplicationInterface
         self::$container = $container;
     }
 
-    public function send($response = null)
-    {
-        if ($response) { // Custom response returned
-            return $response->send();
-        }
-        Response::send();
-    }
 }
