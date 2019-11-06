@@ -6,6 +6,7 @@
 
 namespace adrianschubek\Core;
 
+use Framework\Core\ApplicationInterface;
 use Psr\Container\ContainerInterface;
 
 class Application implements ApplicationInterface

@@ -1,7 +1,7 @@
 <?php
 /**
- * Copyright (c) 2019. Adrian Schubek.
- * https://framework.adriansoftware.de
+ * Copyright (c) 2019 Adrian Schubek
+ * https://adriansoftware.de
  */
 
 namespace Framework\Core;
@@ -12,7 +12,7 @@ use Psr\Container\ContainerInterface;
 
 interface ApplicationInterface
 {
-    static function container();
+    static function getContainer();
 
     static function setContainer(ContainerInterface $container);
 
